@@ -3,7 +3,7 @@
 
 - name: Copy file
   copy:
-    src: /home/dheeraj/2.txt
+    src: /home/2.txt
     dest: /home/ubuntu/
   become: yes
   become_user: root
