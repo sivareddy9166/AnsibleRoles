@@ -3,7 +3,7 @@
 
 - name: Copy file
   copy:
-    src: /var/lib/awx/projects/1.txt
+    src: /home/dheeraj/2.txt
     dest: /home/ubuntu/
   become: yes
   become_user: root
