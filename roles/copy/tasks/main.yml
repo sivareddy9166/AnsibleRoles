@@ -1,0 +1,9 @@
+---
+# tasks file for /etc/ansible/roles/copy
+
+- name: Copy file
+  copy:
+    src: /var/lib/awx/projects/1.txt
+    dest: /home/ubuntu/
+  become: yes
+  become_user: root
