@@ -19,7 +19,7 @@
     shell: "cd /home/sivakondla/dheeraj  && docker build -t petclinic:v2  ."
     
   - name: Run the Docker image
-    shell: "docker run -p 15000:8080 petclinic:v2"   
+    shell: "docker run -p 16000:8080 petclinic:v2"   
   
   - name: Wait for the Docker container to start
     wait_for:
