@@ -11,12 +11,12 @@
   - name: Clone the Git repository
     git:
       repo: "https://github.com/dheerajramesh/spring_project_school_of_dev.git"
-      dest: "/z/users/sivakondla"
+      dest: "/z/users/sivakondla/"
       clone: yes
       version: main
 
   - name: Build the Docker image
-    shell: "cd /z/users/sivakondla  && docker build -t petclinic:v2  ."
+    shell: "cd /z/users/sivakondla/  && docker build -t petclinic:v2  ."
     
   - name: Run the Docker image
     shell: "docker run -p 15000:8080 petclinic:v2"    
