@@ -11,5 +11,5 @@
    #- hostname
    #- firewalld
    #- ntp-config
-   #- motd
-   - copy
+   - motd
+   #- copy
