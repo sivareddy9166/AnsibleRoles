@@ -26,4 +26,4 @@
       host: localhost
       port: 15000
       state: started
-      timeout: 200  
+      timeout: 300  
