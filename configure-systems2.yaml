@@ -1,15 +1,15 @@
 # Playbook to call multiple roles to configure systems
 - name: Configure systems
-  hosts: 15.206.165.213
+  hosts: 192.168.0.115
   become: yes
 
   tasks:
 
 - name: Call Roles
-  hosts: 15.206.165.213
+  hosts: 192.168.0.115
   roles:
    #- hostname
    #- firewalld
    #- ntp-config
-   #- motd
-   - copy
+   - motd
+   #- copy
