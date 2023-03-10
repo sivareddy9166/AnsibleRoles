@@ -8,8 +8,8 @@
 - name: Call Roles
   hosts: 192.168.0.109
   roles:
-   #- hostname
-   #- firewalld
-   #- ntp-config
-   - motd
-#    - copy
+#    - hostname
+#    - firewalld
+#    - ntp-config
+#    - motd
+   - copy
