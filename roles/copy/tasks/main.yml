@@ -11,15 +11,15 @@
   - name: Clone the Git repository
     git:
       repo: "https://github.com/dheerajramesh/spring_project_school_of_dev.git"
-      dest: "/home/sivakondla/dheeraj"
+      dest: "/home/dheeraj/siva"
       clone: yes
       version: main
 
   - name: Build the Docker image
-    shell: "cd /home/sivakondla/dheeraj  && docker build -t petclinic:v2  ."
+    shell: "cd /home/dheeraj/siva  && docker build -t petclinic:v3  ."
     
   - name: Run the Docker image
-    shell: "docker run --detach -p 10000:8080 petclinic:v2"   
+    shell: "docker run --detach -p 10000:8080 petclinic:v3"   
   
  # - name: Wait for the Docker container to start
  #   wait_for:
