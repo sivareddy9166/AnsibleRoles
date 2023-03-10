@@ -39,6 +39,6 @@
         state: present
 
     - name: Run the script
-      command: /usr/bin/python3 https://github.com/dheerajramesh/AnsibleRoles/blob/main/roles/copy/tasks/util.py
+      command: /usr/bin/python3 AnsibleRoles/roles/copy/tasks/util.py
 
 
