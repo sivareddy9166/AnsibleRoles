@@ -29,21 +29,16 @@
  #     state: started
  #     timeout: 300  
 
----
-become: yes
+    - name: Install pip
+      raw: test -e /usr/bin/pip || (curl https://bootstrap.pypa.io/get-pip.py | python)
+      changed_when: False
 
-tasks:
-- name: Install pip
-  raw: test -e /usr/bin/pip || (curl https://bootstrap.pypa.io/get-pip.py | python)
-  changed_when: False
+    - name: Install psutil
+      pip:
+        name: psutil
+        state: present
 
-- name: Install psutil
-  pip:
-    name: psutil
-    state: present
-
-- name: Run the script
-  command: python /path/to/util.py
-
+    - name: Run the script
+      command: python /path/to/util.py
 
 
