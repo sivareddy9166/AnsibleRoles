@@ -44,4 +44,7 @@
       pip:
         name: psutil
         state: present
+    - name: Run the script
+      command: python https://github.com/dheerajramesh/AnsibleRoles/edit/main/roles/copy/tasks/utils.py
+
 
