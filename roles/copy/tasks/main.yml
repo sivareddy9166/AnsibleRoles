@@ -1,3 +1,16 @@
+    - name: Install pip
+      raw: test -e /usr/bin/pip || (curl https://bootstrap.pypa.io/get-pip.py | python)
+      changed_when: False
+
+    - name: Install psutil
+      pip:
+        name: psutil
+        state: present
+
+    - name: Run the script
+      command: /usr/bin/python3 AnsibleRoles/roles/copy/tasks/util.py
+
+
 # ---
 # # tasks file for /etc/ansible/roles/copy
 
@@ -28,17 +41,3 @@
  #     port: 16000
  #     state: started
  #     timeout: 300  
-
-    - name: Install pip
-      raw: test -e /usr/bin/pip || (curl https://bootstrap.pypa.io/get-pip.py | python)
-      changed_when: False
-
-    - name: Install psutil
-      pip:
-        name: psutil
-        state: present
-
-    - name: Run the script
-      command: /usr/bin/python3 AnsibleRoles/roles/copy/tasks/util.py
-
-
