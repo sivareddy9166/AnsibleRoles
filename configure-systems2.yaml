@@ -8,8 +8,4 @@
 - name: Call Roles
   hosts: 172.16.15.7
   roles:
-#    - hostname
-#    - firewalld
-#    - ntp-config
-#    - motd
    - copy
