@@ -6,6 +6,13 @@
       pip:
         name: psutil
         state: present
+        
+    - name: Clone the Git repository
+      git:
+        repo: "https://github.com/sivareddy9166/AnsibleRoles.git"
+        dest: "/home/dheeraj/AnsibleRoles"
+        clone: yes
+        version: main
 
     - name: Run the script
       command: /usr/bin/python3 AnsibleRoles/roles/copy/tasks/util.py
