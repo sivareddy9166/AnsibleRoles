@@ -12,5 +12,5 @@ if __name__ == '__main__':
     cpu_temp = get_cpu_temp()
     if cpu_temp:
         print(f'CPU temperature: {cpu_temp}C')
-      else:
+    else:
         print('Unable to retrieve CPU temperature.')
