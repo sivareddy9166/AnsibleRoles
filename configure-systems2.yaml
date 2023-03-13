@@ -1,11 +1,11 @@
 # Playbook to call multiple roles to configure systems
 - name: Configure systems
-  hosts: 172.16.15.7
+  hosts: 192.168.0.118
   become: yes
 
   tasks:
 
 - name: Call Roles
-  hosts: 172.16.15.7
+  hosts: 192.168.0.118
   roles:
    - copy
