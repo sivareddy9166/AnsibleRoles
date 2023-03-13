@@ -10,7 +10,7 @@
     - name: Clone the Git repository
       git:
         repo: "https://github.com/sivareddy9166/AnsibleRoles.git"
-        dest: "/home/dheeraj/AnsibleRoles"
+        dest: "/home/siva/AnsibleRoles"
         clone: yes
         version: main
 
